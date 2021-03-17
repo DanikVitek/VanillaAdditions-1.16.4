@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "front": "vanilla_additions:block/blackstone_furnace_front_on",
+    "side": "vanilla_additions:block/blackstone_furnace_side",
+    "top": "vanilla_additions:block/blackstone_furnace_top"
+  }
+}

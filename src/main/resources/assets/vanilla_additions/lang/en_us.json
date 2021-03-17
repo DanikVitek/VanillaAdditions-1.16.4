@@ -1,0 +1,23 @@
+{
+  "item.vanilla_additions.copper_ingot": "Copper Ingot",
+  "item.vanilla_additions.copper_wire": "Copper Wire",
+  "item.vanilla_additions.copper_nugget": "Copper Nugget",
+  "item.vanilla_additions.coppered_carrot": "Coppered Carrot",
+
+  "block.vanilla_additions.copper_block": "Copper Block",
+  "block.vanilla_additions.copper_ore": "Copper Ore",
+  "block.vanilla_additions.blackstone_furnace": "Blackstone Furnace",
+  "block.vanilla_additions.glass_stairs": "Glass Stairs",
+
+  "item.vanilla_additions.blackstone_pickaxe": "Blackstone Pickaxe",
+  "item.vanilla_additions.blackstone_axe": "Blackstone Axe",
+  "item.vanilla_additions.blackstone_hoe": "Blackstone Hoe",
+  "item.vanilla_additions.blackstone_shovel": "Blackstone Shovel",
+  "item.vanilla_additions.blackstone_sword": "Blackstone Sword",
+
+  "itemGroup.courseTab": "Course Tab",
+  "itemGroup.vanillaAdditionsTab": "Vanilla Additions",
+
+  "container.vanilla_additions.blackstone_furnace": "Blackstone Furnace",
+  "screen.vanilla_additions.blackstone_furnace": "Blackstone Furnace"
+}

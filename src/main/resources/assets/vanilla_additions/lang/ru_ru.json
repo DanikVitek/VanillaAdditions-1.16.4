@@ -1,0 +1,23 @@
+{
+  "item.vanilla_additions.copper_ingot": "Медный слиток",
+  "item.vanilla_additions.copper_wire": "Медный провод",
+  "item.vanilla_additions.copper_nugget": "Медный самородок",
+  "item.vanilla_additions.coppered_carrot": "Медная морковь",
+
+  "block.vanilla_additions.copper_ore": "Медная руда",
+  "block.vanilla_additions.copper_block": "Медный блок",
+  "block.vanilla_additions.blackstone_furnace": "Печь из чернита",
+  "block.vanilla_additions.glass_stairs": "Стеклянные ступеньки",
+
+  "item.vanilla_additions.blackstone_pickaxe": "Кирка из чернита",
+  "item.vanilla_additions.blackstone_axe": "Топор из чернита",
+  "item.vanilla_additions.blackstone_hoe": "Мотыга из чернита",
+  "item.vanilla_additions.blackstone_shovel": "Лопата из чернита",
+  "item.vanilla_additions.blackstone_sword": "Меч из чернита",
+
+  "itemGroup.courseTab": "Вкладка курса",
+  "itemGroup.vanillaAdditionsTab": "Ванильные дополнения",
+
+  "container.vanilla_additions.blackstone_furnace": "Печь из чернита",
+  "screen.vanilla_additions.blackstone_furnace": "Печь из чернита"
+}
