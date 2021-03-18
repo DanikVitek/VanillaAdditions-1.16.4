@@ -1,5 +1,6 @@
 {
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "particle": "vanilla_additions:block/milk_still"
+    "all": "vanilla_additions:block/milk"
   }
 }
