@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:water",
-    "minecraft:flowing_water"
+    "vanilla_additions:milk_flowing",
+    "vanilla_additions:milk_fluid"
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "vanilla_additions:block/sawmill"},
+    "facing=east": {"model": "vanilla_additions:block/sawmill", "y": 90},
+    "facing=south": {"model": "vanilla_additions:block/sawmill", "y": 180},
+    "facing=west": {"model": "vanilla_additions:block/sawmill", "y":  270}
+  }
+}

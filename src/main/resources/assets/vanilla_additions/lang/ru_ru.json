@@ -8,6 +8,8 @@
   "block.vanilla_additions.copper_block": "Медный блок",
   "block.vanilla_additions.blackstone_furnace": "Печь из чернита",
   "block.vanilla_additions.glass_stairs": "Стеклянные ступеньки",
+  "block.vanilla_additions.glass_slab": "Стеклянный полублок",
+  "block.vanilla_additions.sawmill": "Лесопилка",
 
   "item.vanilla_additions.blackstone_pickaxe": "Кирка из чернита",
   "item.vanilla_additions.blackstone_axe": "Топор из чернита",

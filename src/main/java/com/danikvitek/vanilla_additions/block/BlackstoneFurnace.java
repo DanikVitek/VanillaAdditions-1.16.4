@@ -56,7 +56,7 @@ public class BlackstoneFurnace extends FurnaceBlock {
                 INamedContainerProvider containerProvider = new INamedContainerProvider() {
                     @Override
                     public ITextComponent getDisplayName() {
-                        return new TranslationTextComponent("screen.mccourse.blackstone_furnace");
+                        return new TranslationTextComponent("screen.vanilla_additions.blackstone_furnace");
                     }
 
                     @Override

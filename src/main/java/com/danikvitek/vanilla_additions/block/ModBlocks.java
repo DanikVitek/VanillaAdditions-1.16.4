@@ -63,6 +63,17 @@ public class ModBlocks {
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
+    public static final RegistryObject<Block> SAWMILL = register(
+            "sawmill",
+            () -> new Sawmill(AbstractBlock.Properties
+                    .create(Material.ROCK)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.STONE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(3.5f)
+            ),
+            VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
+    );
 
 
     public static void register() {}

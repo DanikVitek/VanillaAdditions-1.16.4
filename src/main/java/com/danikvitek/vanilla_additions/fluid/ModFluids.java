@@ -49,10 +49,11 @@ public class ModFluids
     )
             .explosionResistance(100f)
             .slopeFindDistance(4)
-            .levelDecreasePerBlock(4)
+            .levelDecreasePerBlock(1)
             .tickRate(5)
-            .bucket(() -> Items.MILK_BUCKET)
-            .block(ModFluids.MILK_BLOCK);
+            .block(ModFluids.MILK_BLOCK)
+            .bucket(() -> Items.MILK_BUCKET);
+
     public static final RegistryObject<FlowingFluidBlock> MILK_BLOCK = Registration.BLOCKS.register(
             "milk",
             () -> new MilkBlock(
