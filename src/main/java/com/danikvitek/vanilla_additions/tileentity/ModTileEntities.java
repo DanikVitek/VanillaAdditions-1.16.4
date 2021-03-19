@@ -24,6 +24,14 @@ public class ModTileEntities
                     ModFluids.MILK_BLOCK.get()
             ).build(null)
     );
+    public static final RegistryObject<TileEntityType<SawmillTileEntity>> SAWMILL_TILE_ENTITY
+            = Registration.TILE_ENTITY_TYPES.register(
+                    "sawmill_tile_entity",
+            () -> TileEntityType.Builder.create(
+                    SawmillTileEntity::new,
+                    ModBlocks.SAWMILL.get()
+            ).build(null)
+    );
 
 
     public static void register() { }
