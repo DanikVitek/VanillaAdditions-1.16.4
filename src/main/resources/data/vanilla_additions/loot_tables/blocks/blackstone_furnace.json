@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mccourse:blackstone_furnace"
+          "name": "vanilla_additions:blackstone_furnace"
         }
       ]
     }

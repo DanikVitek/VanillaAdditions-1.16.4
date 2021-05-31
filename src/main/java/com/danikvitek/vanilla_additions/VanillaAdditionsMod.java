@@ -5,6 +5,7 @@ import com.danikvitek.vanilla_additions.container.ModContainers;
 import com.danikvitek.vanilla_additions.events.ModEvents;
 import com.danikvitek.vanilla_additions.fluid.ModFluids;
 import com.danikvitek.vanilla_additions.item.ModItems;
+import com.danikvitek.vanilla_additions.stats.ModStats;
 import com.danikvitek.vanilla_additions.tileentity.ModTileEntities;
 import com.danikvitek.vanilla_additions.util.Config;
 import com.danikvitek.vanilla_additions.util.Registration;
@@ -92,6 +93,7 @@ public class VanillaAdditionsMod
         ModFluids.register();
         ModTileEntities.register();
         ModContainers.register();
+        ModStats.register();
 
         // register mod events
         MinecraftForge.EVENT_BUS.register(new ModEvents());

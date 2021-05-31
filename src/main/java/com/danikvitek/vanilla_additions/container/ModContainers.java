@@ -3,6 +3,7 @@ package com.danikvitek.vanilla_additions.container;
 import com.danikvitek.vanilla_additions.util.Registration;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.inventory.container.FurnaceContainer;
+import net.minecraft.inventory.container.StonecutterContainer;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.fml.RegistryObject;
 
@@ -13,6 +14,13 @@ public class ModContainers
                     "blackstone_furnace_container",
                     () -> IForgeContainerType.create(
                             (windowId, inv, data) -> new FurnaceContainer(windowId, inv)
+                    )
+            );
+    public static final RegistryObject<ContainerType<StonecutterContainer>> SAWMILL_CONTAINER =
+            Registration.CONTAINERS.register(
+                    "sawmill_container",
+                    () -> IForgeContainerType.create(
+                            (windowId, inv, data) -> new StonecutterContainer(windowId, inv)
                     )
             );
 

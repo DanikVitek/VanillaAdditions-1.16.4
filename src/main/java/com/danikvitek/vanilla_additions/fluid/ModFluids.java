@@ -40,17 +40,15 @@ public class ModFluids
             MILK_FLUID,    // () -> MILK_FLUID.get(),
             MILK_FLOWING,  // () -> MILK_FLOWING.get(),
             FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+                    .density(15)
+                    .luminosity(2)
                     .rarity(Rarity.COMMON)
                     .sound(SoundEvents.BLOCK_WATER_AMBIENT)
-                    .luminosity(2)
-                    .viscosity(5)
-                    .density(15)
                     .overlay(MILK_OVERLAY_RL)
+                    .viscosity(5)
     )
+            .slopeFindDistance(3)
             .explosionResistance(100f)
-            .slopeFindDistance(4)
-            .levelDecreasePerBlock(1)
-            .tickRate(5)
             .block(ModFluids.MILK_BLOCK)
             .bucket(() -> Items.MILK_BUCKET);
 

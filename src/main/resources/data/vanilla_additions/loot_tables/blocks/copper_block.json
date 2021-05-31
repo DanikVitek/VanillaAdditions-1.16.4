@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mccourse:copper_block"
+          "name": "vanilla_additions:copper_block"
         }
       ]
     }

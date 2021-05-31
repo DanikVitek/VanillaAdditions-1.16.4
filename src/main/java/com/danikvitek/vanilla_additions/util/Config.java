@@ -22,6 +22,7 @@ public class Config {
     public static ForgeConfigSpec.IntValue TICKS_PER_MILK_HEAL;
     public static ForgeConfigSpec.IntValue HALF_HEARTS_PER_MILK_HEAL;
 
+    public static ForgeConfigSpec.DoubleValue CHANCE_BAOBAB_GROW_FROM_BONEMEAL;
 
     static {
         ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
@@ -62,6 +63,10 @@ public class Config {
         HALF_HEARTS_PER_MILK_HEAL = CLIENT_BUILDER
                 .comment("How many half-hearts will milk regen")
                 .defineInRange("half_hearts_per_milk_heal", 1, 0, 100);
+
+        CHANCE_BAOBAB_GROW_FROM_BONEMEAL = CLIENT_BUILDER
+                .comment("The chance for baobab to grow on bonemeal usage")
+                .defineInRange("chance_baobab_grow_from_bonemeal", 0.333d, 0, 1);
     }
 
     public static void loadConfigFile(ForgeConfigSpec config, String path){

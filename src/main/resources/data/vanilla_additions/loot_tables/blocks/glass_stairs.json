@@ -18,7 +18,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mccourse:glass_stairs"
+          "name": "vanilla_additions:glass_stairs"
         }
       ]
     }

@@ -24,7 +24,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "mccourse:glass_slab",
+                  "block": "vanilla_additions:glass_slab",
                   "properties": {
                     "type": "double"
                   }
@@ -36,7 +36,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "mccourse:glass_slab"
+          "name": "vanilla_additions:glass_slab"
         }
       ]
     }

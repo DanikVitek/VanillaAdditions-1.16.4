@@ -10,6 +10,13 @@
   "block.vanilla_additions.glass_stairs": "Glass Stairs",
   "block.vanilla_additions.glass_slab": "Glass SLab",
   "block.vanilla_additions.sawmill": "Sawmill",
+  "block.vanilla_additions.baobab_log": "Baobab Log",
+  "block.vanilla_additions.baobab_wood": "Baobab Wood",
+  "block.vanilla_additions.stripped_baobab_log": "Stripped Baobab Log",
+  "block.vanilla_additions.stripped_baobab_wood": "Stripped Baobab Wood",
+  "block.vanilla_additions.baobab_planks": "Baobab Planks",
+  "block.vanilla_additions.baobab_leaves": "Baobab Leaves",
+  "block.vanilla_additions.baobab_sapling": "Baobab Sapling",
 
   "item.vanilla_additions.blackstone_pickaxe": "Blackstone Pickaxe",
   "item.vanilla_additions.blackstone_axe": "Blackstone Axe",

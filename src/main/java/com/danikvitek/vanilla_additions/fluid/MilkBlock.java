@@ -12,6 +12,8 @@ import net.minecraft.item.Items;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.PotionEvent;
@@ -26,7 +28,7 @@ public class MilkBlock extends FlowingFluidBlock
         super(supplier, properties);
     }
 
-    //TODO: decrease all effects' level by 1 when stand in milk every 10(?) ticks
+    //TODO: decrease all effects' level by 1 when stand in milk every TICKS_PER_MILK_EFFECTS_REDUCE ticks
     @SuppressWarnings("deprecation")
     @Override
     public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
@@ -67,6 +69,7 @@ public class MilkBlock extends FlowingFluidBlock
 //                entity.sendMessage(new StringTextComponent(itr.toString()), entity.getUniqueID());
                 }
             }
+            itr.clear();
         }
     }
 

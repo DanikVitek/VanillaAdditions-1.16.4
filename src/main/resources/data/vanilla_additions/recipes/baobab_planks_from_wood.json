@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanilla_additions:baobab_wood"
+    }
+  ],
+  "result": {
+    "item": "vanilla_additions:baobab_planks",
+    "count": 4
+  }
+}

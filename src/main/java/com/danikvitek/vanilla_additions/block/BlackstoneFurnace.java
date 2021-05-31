@@ -75,6 +75,7 @@ public class BlackstoneFurnace extends FurnaceBlock {
             {
                 throw new IllegalStateException("Our Container provider is missing");
             }
+            return ActionResultType.CONSUME;
         }
         return ActionResultType.SUCCESS;
     }
