@@ -1,0 +1,21 @@
+{
+  "block.vanilla_additions.baobab_leaves": "Baobab Leaves",
+  "block.vanilla_additions.baobab_log": "Baobab Log",
+  "block.vanilla_additions.baobab_planks": "Baobab Planks",
+  "block.vanilla_additions.baobab_sapling": "Baobab Sapling",
+  "block.vanilla_additions.baobab_wood": "Baobab Wood",
+  "block.vanilla_additions.blackstone_furnace": "Blackstone Furnace",
+  "block.vanilla_additions.glass_slab": "Glass SLab",
+  "block.vanilla_additions.glass_stairs": "Glass Stairs",
+  "block.vanilla_additions.sawmill": "Sawmill",
+  "block.vanilla_additions.stripped_baobab_log": "Stripped Baobab Log",
+  "block.vanilla_additions.stripped_baobab_wood": "Stripped Baobab Wood",
+  "container.vanilla_additions.blackstone_furnace": "Blackstone Furnace",
+  "item.vanilla_additions.blackstone_axe": "Blackstone Axe",
+  "item.vanilla_additions.blackstone_hoe": "Blackstone Hoe",
+  "item.vanilla_additions.blackstone_pickaxe": "Blackstone Pickaxe",
+  "item.vanilla_additions.blackstone_shovel": "Blackstone Shovel",
+  "item.vanilla_additions.blackstone_sword": "Blackstone Sword",
+  "itemGroup.vanillaAdditions_tab": "Vanilla Additions",
+  "screen.vanilla_additions.blackstone_furnace": "Blackstone Furnace"
+}

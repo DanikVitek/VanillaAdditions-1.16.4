@@ -18,7 +18,7 @@ import java.util.List;
 public class CopperedCarrot extends Item {
     public CopperedCarrot() {
         super(
-                new Properties().group(VanillaAdditionsMod.COURSE_TAB)
+                new Properties().group(VanillaAdditionsMod.VANILLA_ADDITIONS_TAB)
                 .food(new Food.Builder()
                     .hunger(5)
                     .saturation(1.5f)

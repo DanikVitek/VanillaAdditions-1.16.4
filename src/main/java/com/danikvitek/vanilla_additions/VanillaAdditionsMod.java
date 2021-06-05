@@ -32,13 +32,7 @@ public class VanillaAdditionsMod
 {
     public static final String MOD_ID = "vanilla_additions";
 
-    public static final ItemGroup COURSE_TAB = new ItemGroup("courseTab") {
-        @Override
-        public ItemStack createIcon() {
-            return new ItemStack(ModItems.COPPER_WIRE.get());
-        }
-    };
-    public static final ItemGroup VANILLA_ADDITIONS_TAB = new ItemGroup("vanillaAdditionsTab") {
+    public static final ItemGroup VANILLA_ADDITIONS_TAB = new ItemGroup("vanillaAdditions_tab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModBlocks.BLACKSTONE_FURNACE.get());

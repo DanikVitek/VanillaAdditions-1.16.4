@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "vanilla_additions:block/stripped_baobab_log",
+    "end": "vanilla_additions:block/stripped_baobab_log_top"
+  }
+}

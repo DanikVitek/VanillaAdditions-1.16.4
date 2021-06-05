@@ -7,27 +7,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ModItems {
-    public static final RegistryObject<Item> COPPER_INGOT =
-            Registration.ITEMS.register(
-                    "copper_ingot",
-                    () -> new CopperIngot(new Item.Properties().group(VanillaAdditionsMod.COURSE_TAB))
-            );
-    public static final RegistryObject<Item> COPPER_WIRE =
-            Registration.ITEMS.register(
-                    "copper_wire",
-                    () -> new CopperWire(new Item.Properties().group(VanillaAdditionsMod.COURSE_TAB))
-            );
-    public static final RegistryObject<Item> COPPER_NUGGET =
-            Registration.ITEMS.register(
-                    "copper_nugget",
-                    () -> new CopperNugget(new Item.Properties().group(VanillaAdditionsMod.COURSE_TAB))
-            );
-    public static final RegistryObject<Item> COPPERED_CARROT =
-            Registration.ITEMS.register(
-                    "coppered_carrot",
-                    CopperedCarrot::new // replaced lambda
-            );
-
     public static final RegistryObject<Item> BLACKSTONE_SHOVEL =
             Registration.ITEMS.register(
                     "blackstone_shovel",

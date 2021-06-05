@@ -6,7 +6,6 @@ import com.danikvitek.vanilla_additions.trees.BaobabTree;
 import com.danikvitek.vanilla_additions.util.Registration;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.MinecraftGame;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -62,21 +61,21 @@ public class ModBlocks {
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> BAOBAB_LOG = register(
+    public static final RegistryObject<Block> BAOBAB_LOG = register( //TODO: make as fuel and burnable
             "baobab_log",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(Blocks.OAK_LOG)
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> BAOBAB_WOOD = register(
+    public static final RegistryObject<Block> BAOBAB_WOOD = register( //TODO: make as fuel and burnable
             "baobab_wood",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(Blocks.OAK_WOOD)
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> STRIPPED_BAOBAB_LOG = register(
+    public static final RegistryObject<Block> STRIPPED_BAOBAB_LOG = register( //TODO: make as fuel and burnable
             "stripped_baobab_log",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(Blocks.STRIPPED_OAK_LOG)
@@ -85,7 +84,7 @@ public class ModBlocks {
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> STRIPPED_BAOBAB_WOOD = register(
+    public static final RegistryObject<Block> STRIPPED_BAOBAB_WOOD = register( //TODO: make as fuel and burnable
             "stripped_baobab_wood",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(ModBlocks.STRIPPED_BAOBAB_LOG.get())
@@ -99,7 +98,7 @@ public class ModBlocks {
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> BAOBAB_SAPLING = register(
+    public static final RegistryObject<Block> BAOBAB_SAPLING = register( //TODO: make as fuel
             "baobab_sapling",
             () -> new BaobabSapling(
                     BaobabTree::new,
