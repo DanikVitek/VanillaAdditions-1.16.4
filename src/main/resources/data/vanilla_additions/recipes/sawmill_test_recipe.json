@@ -2,7 +2,7 @@
   "type": "vanilla_additions:sawmill",
   "ingredients": [
     {
-      "item": "vanilla_additions:blackstone_pickaxe"
+      "item": "minecraft:jungle_planks"
     }
   ],
   "output": {

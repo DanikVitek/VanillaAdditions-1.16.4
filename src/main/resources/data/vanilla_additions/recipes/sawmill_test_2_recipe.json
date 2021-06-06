@@ -2,7 +2,7 @@
   "type": "vanilla_additions:sawmill",
   "ingredients": [
     {
-      "item": "vanilla_additions:blackstone_shovel"
+      "item": "minecraft:oak_planks"
     }
   ],
   "output": {

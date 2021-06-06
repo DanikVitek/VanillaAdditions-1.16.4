@@ -2,11 +2,14 @@ package com.danikvitek.vanilla_additions.tileentity;
 
 import com.danikvitek.vanilla_additions.data.recipes.ModRecipeTypes;
 import com.danikvitek.vanilla_additions.data.recipes.SawmillRecipe;
+import com.danikvitek.vanilla_additions.item.ModItems;
 import com.danikvitek.vanilla_additions.network.ItemMessage;
 import com.danikvitek.vanilla_additions.network.ModPacketHandler;
 import jdk.jfr.internal.tool.PrettyWriter;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.CraftingTableBlock;
 import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
@@ -50,7 +53,7 @@ public class SawmillTileEntity extends TileEntity implements ITickableTileEntity
         super(tileEntityTypeIn);
     }
 
-    private ItemStackHandler createHandler(){
+    private ItemStackHandler createHandler() {
         return new ItemStackHandler(2){
             @Override
             protected void onContentsChanged(int slot) {
@@ -59,12 +62,14 @@ public class SawmillTileEntity extends TileEntity implements ITickableTileEntity
 
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
-                //if(slot == 0){
-                //    return stack.getItem().isIn(ItemTags.PLANKS) ||
-                //           stack.getItem().isIn(ItemTags.LOGS);
-                //}
-                //else return false;
-                return true;
+                if(slot == 0) {
+                    return stack.getItem().isIn(ItemTags.PLANKS) ||
+                           stack.getItem().isIn(ItemTags.LOGS);
+                }
+                else if(slot == 1) {
+                    return stack.getItem() == ModItems.BLACKSTONE_SHOVEL.get()
+                            || stack.getItem() == ModItems.BLACKSTONE_PICKAXE.get();
+                } else return false;
             }
 
             @Nonnull
@@ -116,7 +121,6 @@ public class SawmillTileEntity extends TileEntity implements ITickableTileEntity
             ItemStack output = iRecipe.getRecipeOutput();
 
             if (inv.getStackInSlot(1).isEmpty()) {
-
                 itemHandler.extractItem(0, 1, false);
                 itemHandler.insertItem(1, output, false);
             }
