@@ -32,7 +32,7 @@ public class VanillaAdditionsMod
 {
     public static final String MOD_ID = "vanilla_additions";
 
-    public static final ItemGroup VANILLA_ADDITIONS_TAB = new ItemGroup("vanillaAdditions_tab") {
+    public static final ItemGroup VANILLA_ADDITIONS_TAB = new ItemGroup("vanilla_additions_tab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModBlocks.BLACKSTONE_FURNACE.get());

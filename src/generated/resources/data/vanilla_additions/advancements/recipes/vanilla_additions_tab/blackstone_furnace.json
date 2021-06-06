@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanilla_additions:blackstone_furnace"
+    ]
+  },
+  "criteria": {
+    "blackstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blackstone"
+          }
+        ]
+      }
+    },
+    "soul_fire_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:soul_fire_base_blocks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vanilla_additions:blackstone_furnace"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blackstone",
+      "soul_fire_block",
+      "has_the_recipe"
+    ]
+  ]
+}

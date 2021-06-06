@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:story/iron_tools",
+  "display": {
+    "icon": {
+      "item": "vanilla_additions:blackstone_furnace"
+    },
+    "title": {
+      "translate": "advancements.story.blackstone_cooking.title"
+    },
+    "description": {
+      "translate": "advancements.story.blackstone_cooking.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blackstone_furnace_get": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "vanilla_additions:blackstone_furnace"
+          }
+        ]
+      }
+    },
+    "blackstone_furnace_placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "vanilla_additions:blackstone_furnace"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blackstone_furnace_get"
+    ],
+    [
+      "blackstone_furnace_placed"
+    ]
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:story/iron_tools",
+  "display": {
+    "icon": {
+      "item": "vanilla_additions:blackstone_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.story.blackstone_tool.title"
+    },
+    "description": {
+      "translate": "advancements.story.blackstone_tool.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blackstone_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:blackstone_tools"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blackstone_pickaxe"
+    ]
+  ]
+}

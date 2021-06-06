@@ -1,4 +1,10 @@
 {
+  "advancements.story.blackstone_combat.description": "Acquire Blackstone Sword",
+  "advancements.story.blackstone_combat.title": "Fight with style!",
+  "advancements.story.blackstone_cooking.description": "Craft and place the Blackstone Furnace",
+  "advancements.story.blackstone_cooking.title": "Stylish Furniture",
+  "advancements.story.blackstone_tool.description": "Acquire Blackstone Tool",
+  "advancements.story.blackstone_tool.title": "Pretty Black!",
   "block.vanilla_additions.baobab_leaves": "Baobab Leaves",
   "block.vanilla_additions.baobab_log": "Baobab Log",
   "block.vanilla_additions.baobab_planks": "Baobab Planks",
@@ -16,6 +22,6 @@
   "item.vanilla_additions.blackstone_pickaxe": "Blackstone Pickaxe",
   "item.vanilla_additions.blackstone_shovel": "Blackstone Shovel",
   "item.vanilla_additions.blackstone_sword": "Blackstone Sword",
-  "itemGroup.vanillaAdditions_tab": "Vanilla Additions",
+  "itemGroup.vanilla_additions_tab": "Vanilla Additions",
   "screen.vanilla_additions.blackstone_furnace": "Blackstone Furnace"
 }

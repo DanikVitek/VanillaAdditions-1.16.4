@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "vanilla_additions:baobab_wood"
+      "tag": "minecraft:baobab_logs"
     }
   ],
   "result": {

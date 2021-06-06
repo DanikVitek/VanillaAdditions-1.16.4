@@ -34,10 +34,17 @@ public class ModLanguageProvider extends LanguageProvider {
                 add(ModItems.BLACKSTONE_SHOVEL.get(), "Blackstone Shovel");
                 add(ModItems.BLACKSTONE_SWORD.get(), "Blackstone Sword");
 
-                add("itemGroup.vanillaAdditions_tab", "Vanilla Additions");
+                add("advancements.story.blackstone_tool.title", "Pretty Black!");
+                add("advancements.story.blackstone_tool.description", "Acquire Blackstone Tool");
+                add("advancements.story.blackstone_combat.title", "Fight with style!");
+                add("advancements.story.blackstone_combat.description", "Acquire Blackstone Sword");
+                add("advancements.story.blackstone_cooking.title", "Stylish Furniture");
+                add("advancements.story.blackstone_cooking.description", "Craft and place the Blackstone Furnace");
 
                 add("container.vanilla_additions.blackstone_furnace", "Blackstone Furnace");
                 add("screen.vanilla_additions.blackstone_furnace", "Blackstone Furnace");
+
+                add("itemGroup.vanilla_additions_tab", "Vanilla Additions");
                 break;
             case "uk_ua":
                 add(ModBlocks.BLACKSTONE_FURNACE.get(), "Чорнокам'яна піч");
@@ -54,14 +61,21 @@ public class ModLanguageProvider extends LanguageProvider {
 
                 add(ModItems.BLACKSTONE_PICKAXE.get(), "Чорнокам'яне кайло");
                 add(ModItems.BLACKSTONE_AXE.get(), "Чорнокам'яна сокира");
-                add(ModItems.BLACKSTONE_HOE.get(), "Чорнокам'яна мотика");
+                add(ModItems.BLACKSTONE_HOE.get(), "Чорнокам'яна сокира");
                 add(ModItems.BLACKSTONE_SHOVEL.get(), "Чорнокам'яна лопата");
                 add(ModItems.BLACKSTONE_SWORD.get(), "Чорнокам'яний меч");
 
-                add("itemGroup.vanillaAdditions_tab", "Ванильні доповнення");
+                add("advancements.story.blackstone_tool.title", "Яскраво чорний!");
+                add("advancements.story.blackstone_tool.description", "Здобудьте чорнокам'яний інструмент");
+                add("advancements.story.blackstone_combat.title", "Борися зі стилем!");
+                add("advancements.story.blackstone_combat.description", "Здобудьте чорнокам'яний меч");
+                add("advancements.story.blackstone_cooking.title", "Красива кухня");
+                add("advancements.story.blackstone_cooking.description", "Змайструй за розташуй Чорнокам'яну піч");
 
                 add("container.vanilla_additions.blackstone_furnace", "Чорнокам'яна піч");
                 add("screen.vanilla_additions.blackstone_furnace", "Чорнокам'яна піч");
+
+                add("itemGroup.vanilla_additions_tab", "Ванильні доповнення");
                 break;
             case "ru_ru":
                 add(ModBlocks.BLACKSTONE_FURNACE.get(), "Печь из чернита");
@@ -80,12 +94,19 @@ public class ModLanguageProvider extends LanguageProvider {
                 add(ModItems.BLACKSTONE_AXE.get(), "Топор из чернита");
                 add(ModItems.BLACKSTONE_HOE.get(), "Мотыга из чернита");
                 add(ModItems.BLACKSTONE_SHOVEL.get(), "Лопата из чернита");
-                add(ModItems.BLACKSTONE_SWORD.get(), "Меч из чернита");
+                add(ModItems.BLACKSTONE_SWORD.get(), "Мечь из чернита");
 
-                add("itemGroup.vanillaAdditions_tab", "Ванильные дополнения");
+                add("advancements.story.blackstone_tool.title", "Ярко чёрный!");
+                add("advancements.story.blackstone_tool.description", "Получите инструмент из чернита");
+                add("advancements.story.blackstone_combat.title", "Сражайся со стилем!");
+                add("advancements.story.blackstone_combat.description", "Получите Мечь из чернита");
+                add("advancements.story.blackstone_cooking.title", "Красивая кухня");
+                add("advancements.story.blackstone_cooking.description", "Создай и размести Печь из чернита");
 
                 add("container.vanilla_additions.blackstone_furnace", "Печь из чернита");
                 add("screen.vanilla_additions.blackstone_furnace", "Печь из чернита");
+
+                add("itemGroup.vanilla_additions_tab", "Ванильные дополнения");
                 break;
             default:
                 break;

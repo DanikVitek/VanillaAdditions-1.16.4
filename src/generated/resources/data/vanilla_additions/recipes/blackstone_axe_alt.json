@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#S#",
-    "###"
+    "BB",
+    "/B",
+    "/ "
   ],
   "key": {
-    "#": {
+    "B": {
       "item": "minecraft:blackstone"
     },
-    "S": {
-      "item": "minecraft:soul_sand"
+    "/": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "mccourse:blackstone_furnace"
+    "item": "vanilla_additions:blackstone_axe"
   }
 }

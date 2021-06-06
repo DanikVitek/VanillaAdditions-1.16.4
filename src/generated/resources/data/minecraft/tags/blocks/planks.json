@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "vanilla_additions:baobab_planks",
     "minecraft:oak_planks",
     "minecraft:spruce_planks",
     "minecraft:birch_planks",

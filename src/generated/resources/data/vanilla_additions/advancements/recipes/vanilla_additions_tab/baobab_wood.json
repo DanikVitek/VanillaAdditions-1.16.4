@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanilla_additions:baobab_wood"
+    ]
+  },
+  "criteria": {
+    "baobab_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "vanilla_additions:baobab_log"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vanilla_additions:baobab_wood"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "baobab_log",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_additions:blackstone_pickaxe",
+    "vanilla_additions:blackstone_axe",
+    "vanilla_additions:blackstone_shovel",
+    "vanilla_additions:blackstone_hoe"
+  ]
+}

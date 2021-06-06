@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_additions:baobab_log",
+    "vanilla_additions:baobab_wood",
+    "vanilla_additions:stripped_baobab_log",
+    "vanilla_additions:stripped_baobab_wood"
+  ]
+}

@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "x",
-    "s",
-    "s"
+    "BB",
+    "/ ",
+    "/ "
   ],
   "key": {
-    "x": {
-      "item": "minecraft:cobblestone"
+    "B": {
+      "item": "minecraft:blackstone"
     },
-    "s": {
+    "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "minecraft:stone_shovel"
+    "item": "vanilla_additions:blackstone_hoe"
   }
 }

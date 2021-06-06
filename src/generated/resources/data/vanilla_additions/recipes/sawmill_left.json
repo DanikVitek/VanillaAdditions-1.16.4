@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#A ",
+    "AC ",
+    "___"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_stone"
+    },
+    "A": {
+      "item": "minecraft:andesite_wall"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "_": {
+      "item": "minecraft:polished_granite_slab"
+    }
+  },
+  "result": {
+    "item": "vanilla_additions:sawmill"
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "#minecraft:baobab_logs",
     "#minecraft:dark_oak_logs",
     "#minecraft:oak_logs",
     "#minecraft:acacia_logs",

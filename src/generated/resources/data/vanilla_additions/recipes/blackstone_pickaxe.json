@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blackstone"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "vanilla_additions:blackstone_pickaxe"
+  }
+}
