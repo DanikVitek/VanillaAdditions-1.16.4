@@ -1,11 +1,16 @@
 package com.danikvitek.vanilla_additions.block;
 
+import com.danikvitek.vanilla_additions.container.SawmillContainer;
 import com.danikvitek.vanilla_additions.stats.ModStats;
 import com.danikvitek.vanilla_additions.tileentity.ModTileEntities;
+import com.danikvitek.vanilla_additions.tileentity.SawmillTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.SimpleNamedContainerProvider;
 import net.minecraft.inventory.container.StonecutterContainer;
@@ -20,10 +25,12 @@ import net.minecraft.util.math.shapes.IBooleanFunction;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.network.NetworkHooks;
 
 import javax.annotation.Nullable;
 import java.util.stream.Stream;
@@ -89,13 +96,35 @@ public class Sawmill extends Block {
     @SuppressWarnings("deprecation")
     @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        if (worldIn.isRemote())
-            return ActionResultType.SUCCESS;
-        else {
-            player.openContainer(state.getContainer(worldIn, pos));
-            player.addStat(ModStats.INTERACT_WITH_SAWMILL);
-            return ActionResultType.CONSUME;
+
+        if(!worldIn.isRemote())
+        {
+            TileEntity tileEntity = worldIn.getTileEntity(pos);
+            if(tileEntity instanceof SawmillTileEntity)
+            {
+                INamedContainerProvider containerProvider = new INamedContainerProvider()
+                {
+                    @Override
+                    public ITextComponent getDisplayName()
+                    {
+                        return new TranslationTextComponent("screen.vanilla_additions.sawmill");
+                    }
+
+                    @Override
+                    public Container createMenu(int i, PlayerInventory playerInventory, PlayerEntity playerEntity)
+                    {
+                        return new SawmillContainer(i, worldIn, pos, playerInventory, playerEntity);
+                    }
+                };
+                NetworkHooks.openGui((ServerPlayerEntity) player, containerProvider, tileEntity.getPos());
+            }
+            else
+            {
+                throw new IllegalStateException("Our Container provider is missing!");
+            }
         }
+
+        return ActionResultType.SUCCESS;
     }
 
     @Nullable

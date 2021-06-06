@@ -1,6 +1,7 @@
 package com.danikvitek.vanilla_additions.util;
 
 import com.danikvitek.vanilla_additions.VanillaAdditionsMod;
+import com.danikvitek.vanilla_additions.data.recipes.ModRecipeTypes;
 import com.danikvitek.vanilla_additions.data.recipes.SawmillRecipe;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
@@ -46,10 +47,6 @@ public class Registration {
         CONTAINERS.register(eventBus);
         STAT_TYPES.register(eventBus);
         RECIPE_SERIALIZER.register(eventBus);
-        registerRecipes();
-    }
-
-    static void registerRecipes(){
-        Registry.register(Registry.RECIPE_TYPE, SawmillRecipe.TYPE_ID, SAWMILL_RECIPE);
+        ModRecipeTypes.registerRecipes();
     }
 }

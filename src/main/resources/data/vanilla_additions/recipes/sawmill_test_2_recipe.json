@@ -1,0 +1,12 @@
+﻿{
+  "type": "vanilla_additions:sawmill",
+  "ingredients": [
+    {
+      "item": "vanilla_additions:blackstone_shovel"
+    }
+  ],
+  "output": {
+    "item": "vanilla_additions:blackstone_pickaxe",
+    "count": 1
+  }
+}
