@@ -16,6 +16,14 @@ public class ModTileEntities
                     ModBlocks.BLACKSTONE_FURNACE.get()
             ).build(null)
     );
+    public static final RegistryObject<TileEntityType<SawmillTileEntity>> SAWMILL_TILE_ENTITY
+            = Registration.TILE_ENTITY_TYPES.register(
+            "sawmill_tile_entity",
+            () -> TileEntityType.Builder.create(
+                    SawmillTileEntity::new,
+                    ModBlocks.SAWMILL.get()
+            ).build(null)
+    );
     public static final RegistryObject<TileEntityType<MilkBlockTileEntity>> MILK_TILE_ENTITY
             = Registration.TILE_ENTITY_TYPES.register(
             "milk_tile_entity",
@@ -26,5 +34,5 @@ public class ModTileEntities
     );
 
 
-    public static void register() { }
+    public static void register() {}
 }

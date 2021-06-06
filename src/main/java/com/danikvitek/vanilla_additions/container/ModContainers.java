@@ -3,7 +3,8 @@ package com.danikvitek.vanilla_additions.container;
 import com.danikvitek.vanilla_additions.util.Registration;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.inventory.container.FurnaceContainer;
-import net.minecraft.inventory.container.StonecutterContainer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.fml.RegistryObject;
 
@@ -16,11 +17,15 @@ public class ModContainers
                             (windowId, inv, data) -> new FurnaceContainer(windowId, inv)
                     )
             );
-    public static final RegistryObject<ContainerType<StonecutterContainer>> SAWMILL_CONTAINER =
+    public static final RegistryObject<ContainerType<SawmillContainer>> SAWMILL_CONTAINER =
             Registration.CONTAINERS.register(
                     "sawmill_container",
                     () -> IForgeContainerType.create(
-                            (windowId, inv, data) -> new StonecutterContainer(windowId, inv)
+                            (windowId, inv, data) -> {
+                                BlockPos pos = data.readBlockPos();
+                                World world = inv.player.getEntityWorld();
+                                return new SawmillContainer(windowId, world, pos, inv, inv.player);
+                            }
                     )
             );
 

@@ -1,13 +1,15 @@
 package com.danikvitek.vanilla_additions.util;
 
 import com.danikvitek.vanilla_additions.VanillaAdditionsMod;
+import com.danikvitek.vanilla_additions.data.recipes.SawmillRecipe;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
-import net.minecraft.stats.Stat;
+import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.stats.StatType;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.registry.Registry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +34,9 @@ public class Registration {
     public static final DeferredRegister<StatType<?>> STAT_TYPES =
             DeferredRegister.create(ForgeRegistries.STAT_TYPES, VanillaAdditionsMod.MOD_ID);
 
+    public static final DeferredRegister<IRecipeSerializer<?>> RECIPE_SERIALIZER
+            = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, VanillaAdditionsMod.MOD_ID);
+
     public static void init(){
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(eventBus);
@@ -40,5 +45,11 @@ public class Registration {
         TILE_ENTITY_TYPES.register(eventBus);
         CONTAINERS.register(eventBus);
         STAT_TYPES.register(eventBus);
+        RECIPE_SERIALIZER.register(eventBus);
+        registerRecipes();
+    }
+
+    static void registerRecipes(){
+        Registry.register(Registry.RECIPE_TYPE, SawmillRecipe.TYPE_ID, SAWMILL_RECIPE);
     }
 }
