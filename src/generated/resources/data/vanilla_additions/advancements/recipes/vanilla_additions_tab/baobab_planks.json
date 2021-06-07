@@ -6,7 +6,7 @@
     ]
   },
   "criteria": {
-    "baobab_log": {
+    "has_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -25,7 +25,7 @@
   },
   "requirements": [
     [
-      "baobab_log",
+      "has_log",
       "has_the_recipe"
     ]
   ]

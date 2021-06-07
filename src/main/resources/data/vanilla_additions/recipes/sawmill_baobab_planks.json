@@ -1,0 +1,12 @@
+{
+  "type": "vanilla_additions:sawmill",
+  "ingredients": [
+    {
+      "item": "vanilla_additions:baobab_log"
+    }
+  ],
+  "output": {
+    "item": "vanilla_additions:baobab_planks",
+    "count": 4
+  }
+}

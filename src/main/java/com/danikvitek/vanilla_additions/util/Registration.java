@@ -1,7 +1,7 @@
 package com.danikvitek.vanilla_additions.util;
 
 import com.danikvitek.vanilla_additions.VanillaAdditionsMod;
-import com.danikvitek.vanilla_additions.data.recipes.SawmillRecipe;
+import com.danikvitek.vanilla_additions.data.recipes.ModRecipeTypes;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
@@ -9,7 +9,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.stats.StatType;
 import net.minecraft.tileentity.TileEntityType;
-import net.minecraft.util.registry.Registry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -46,10 +45,6 @@ public class Registration {
         CONTAINERS.register(eventBus);
         STAT_TYPES.register(eventBus);
         RECIPE_SERIALIZER.register(eventBus);
-        registerRecipes();
-    }
-
-    static void registerRecipes(){
-        Registry.register(Registry.RECIPE_TYPE, SawmillRecipe.TYPE_ID, SAWMILL_RECIPE);
+        ModRecipeTypes.registerRecipes();
     }
 }
