@@ -133,7 +133,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .addCriterion("blackstone", hasItem(Blocks.BLACKSTONE))
                 .build(consumer);
 
-        SingleItemRecipeBuilder.stonecuttingRecipe();
+//        SingleItemRecipeBuilder.stonecuttingRecipe();
     }
 
 //    private static void addWoodcutting(Consumer<IFinishedRecipe> consumer){
