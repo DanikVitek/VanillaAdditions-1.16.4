@@ -44,6 +44,7 @@ public class ModLanguageProvider extends LanguageProvider {
 
                 add("container.vanilla_additions.blackstone_furnace", "Blackstone Furnace");
                 add("screen.vanilla_additions.blackstone_furnace", "Blackstone Furnace");
+                add("screen.vanilla_additions.sawmill", "Sawmill");
 
                 add("itemGroup.vanilla_additions_tab", "Vanilla Additions");
                 break;
@@ -75,6 +76,7 @@ public class ModLanguageProvider extends LanguageProvider {
 
                 add("container.vanilla_additions.blackstone_furnace", "Чорнокам'яна піч");
                 add("screen.vanilla_additions.blackstone_furnace", "Чорнокам'яна піч");
+                add("screen.vanilla_additions.sawmill", "Лісопилка");
 
                 add("itemGroup.vanilla_additions_tab", "Ванильні доповнення");
                 break;
@@ -106,6 +108,7 @@ public class ModLanguageProvider extends LanguageProvider {
 
                 add("container.vanilla_additions.blackstone_furnace", "Печь из чернита");
                 add("screen.vanilla_additions.blackstone_furnace", "Печь из чернита");
+                add("screen.vanilla_additions.sawmill", "Лесопилка");
 
                 add("itemGroup.vanilla_additions_tab", "Ванильные дополнения");
                 break;
