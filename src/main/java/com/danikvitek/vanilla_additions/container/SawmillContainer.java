@@ -28,10 +28,10 @@ import java.util.Objects;
 
 public class SawmillContainer extends Container {
 
-    private TileEntity tileEntity;
-    private PlayerEntity playerEntity;
-    private IItemHandler playerInventory;
-    private List<SawmillRecipe> recipes = Lists.newArrayList();
+    private final TileEntity tileEntity;
+    private final PlayerEntity playerEntity;
+    private final IItemHandler playerInventory;
+    private final List<SawmillRecipe> recipes = Lists.newArrayList();
     private final IntReferenceHolder selectedRecipe = IntReferenceHolder.single();
 
     public SawmillContainer(int windowId, World world, BlockPos pos, PlayerInventory playerInventory, PlayerEntity player){

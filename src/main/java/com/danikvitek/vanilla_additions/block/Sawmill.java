@@ -125,6 +125,7 @@ public class Sawmill extends Block {
         return ActionResultType.SUCCESS;
     }
 
+    @SuppressWarnings("deprecation")
     @Nullable
     public INamedContainerProvider getContainer(BlockState state, World worldIn, BlockPos pos) {
         return new SimpleNamedContainerProvider(
