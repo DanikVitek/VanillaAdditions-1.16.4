@@ -133,7 +133,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .addCriterion("blackstone", hasItem(Blocks.BLACKSTONE))
                 .build(consumer);
 
-//        SingleItemRecipeBuilder.stonecuttingRecipe();
+//        //Water from Wet Sponge
+//        ShapedRecipeBuilder.shapedRecipe(Blocks.SPONGE)
+//                .key('S', Blocks.WET_SPONGE)
+//                .key('B', Items.BUCKET)
+//                .patternLine("S")
+//                .patternLine("B")
+//                .addCriterion("sponge", hasItem(Blocks.WET_SPONGE))
+//                .addCriterion("bucket", hasItem(Items.BUCKET))
+//                .build(consumer);
+//        ShapelessRecipeBuilder.shapelessRecipe(Blocks.WET_SPONGE)
+//                .addIngredient(ModItemTags.BAOBAB_LOGS)
+//                .addIngredient(Blocks.SPONGE)
+//                .addCriterion("sponge", hasItem(Blocks.SPONGE))
+//                .addCriterion("baobab_logs", hasItem(ModItemTags.BAOBAB_LOGS))
+//                .build(consumer);
+
     }
 
 //    private static void addWoodcutting(Consumer<IFinishedRecipe> consumer){
