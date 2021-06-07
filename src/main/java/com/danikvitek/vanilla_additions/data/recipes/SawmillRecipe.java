@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SawmillRecipe implements ISawmillRecipe {
-
     private final ResourceLocation id;
     private final ItemStack output;
     private final Ingredient inputs;
