@@ -1,0 +1,12 @@
+﻿{
+  "type": "vanilla_additions:sawmill",
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_planks"
+    }
+  ],
+  "output": {
+    "item": "vanilla_additions:blackstone_shovel",
+    "count": 1
+  }
+}

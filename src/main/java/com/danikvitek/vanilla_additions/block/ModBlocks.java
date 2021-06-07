@@ -107,7 +107,7 @@ public class ModBlocks {
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
 
-    public static void register() {}
+    public static void register() { }
 
     private static <T extends Block>RegistryObject<T> register(String name, Supplier<T> block, ItemGroup itemGroup){
         RegistryObject<T> toReturn = Registration.BLOCKS.register(name, block);
