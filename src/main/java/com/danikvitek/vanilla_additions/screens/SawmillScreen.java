@@ -13,6 +13,7 @@ import net.minecraft.util.text.ITextComponent;
 import java.util.List;
 
 public class SawmillScreen extends ContainerScreen<SawmillContainer> {
+
     private final ResourceLocation GUI = new ResourceLocation(VanillaAdditionsMod.MOD_ID,
             "textures/gui/container/sawmill.png");
     private float sliderProgress;

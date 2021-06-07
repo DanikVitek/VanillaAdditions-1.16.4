@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ModRecipes {
+
     //Inefficient item match method, but better than nothing!
     public static boolean matches(Ingredient ingredient, IInventory inv) {
         //Copy the inventory in a separate place just so that I can remove stuff from it
