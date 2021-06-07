@@ -29,10 +29,10 @@ public class DataGenerators {
 
         ModBlockTagsProvider modBlockTagsProvider = new ModBlockTagsProvider(generator, existingFileHelper);
         generator.addProvider(modBlockTagsProvider);
-        generator.addProvider(new ModItemTagsProvider(generator, modBlockTagsProvider, existingFileHelper));
         generator.addProvider(new ModRecipeProvider(generator));
         generator.addProvider(new ModLootTableProvider(generator));
         generator.addProvider(new ModAdvancementProvider(generator));
+        generator.addProvider(new ModItemTagsProvider(generator, modBlockTagsProvider, existingFileHelper));
     }
 
     private static void addLanguageProviders(DataGenerator generator){

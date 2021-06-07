@@ -1,6 +1,5 @@
 package com.danikvitek.vanilla_additions.tileentity;
 
-import com.danikvitek.vanilla_additions.data.ModItemTags;
 import com.danikvitek.vanilla_additions.data.recipes.ModRecipeTypes;
 import com.danikvitek.vanilla_additions.data.recipes.SawmillRecipe;
 import com.danikvitek.vanilla_additions.network.ItemMessage;
@@ -64,7 +63,7 @@ public class SawmillTileEntity extends TileEntity implements ITickableTileEntity
                             stack.getItem().isIn(ItemTags.WOODEN_DOORS) ||
                             stack.getItem().isIn(ItemTags.WOODEN_TRAPDOORS) ||
                             stack.getItem().isIn(ItemTags.WOODEN_FENCES) ||
-                            stack.getItem().isIn(ModItemTags.FENCE_GATES) ||
+//                            stack.getItem().isIn(ModItemTags.FENCE_GATES) ||
                             stack.getItem().isIn(ItemTags.WOODEN_PRESSURE_PLATES) ||
                             stack.getItem().isIn(ItemTags.WOODEN_BUTTONS);
                 } else return false;

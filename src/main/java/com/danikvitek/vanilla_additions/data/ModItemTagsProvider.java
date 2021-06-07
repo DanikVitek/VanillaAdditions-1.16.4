@@ -5,7 +5,6 @@ import com.danikvitek.vanilla_additions.item.ModItems;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -26,7 +25,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 ModItems.BLACKSTONE_SHOVEL.get(),
                 ModItems.BLACKSTONE_HOE.get()
         );
-        this.copy(BlockTags.FENCE_GATES, ModItemTags.FENCE_GATES);
 
         super.registerTags();
     }

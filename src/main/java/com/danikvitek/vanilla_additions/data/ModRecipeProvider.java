@@ -133,7 +133,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .addCriterion("blackstone", hasItem(Blocks.BLACKSTONE))
                 .build(consumer);
 
-//        SingleItemRecipeBuilder.stonecuttingRecipe();
+        SingleItemRecipeBuilder.stonecuttingRecipe();
     }
 
 //    private static void addWoodcutting(Consumer<IFinishedRecipe> consumer){
@@ -150,14 +150,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .patternLine("X")
                 .patternLine("X")
                 .patternLine("#")
-                .addCriterion("has_cobblestone", hasItem(Items.COBBLESTONE)).build(consumer);
+                .addCriterion("has_cobblestone", hasItem(Items.COBBLESTONE))
+                .build(consumer, new ResourceLocation("stone_sword"));
         ShapedRecipeBuilder.shapedRecipe(Items.STONE_SHOVEL)
                 .key('#', Items.STICK)
                 .key('X', Items.COBBLESTONE)
                 .patternLine("X")
                 .patternLine("#")
                 .patternLine("#")
-                .addCriterion("has_cobblestone", hasItem(Items.COBBLESTONE)).build(consumer);
+                .addCriterion("has_cobblestone", hasItem(Items.COBBLESTONE))
+                .build(consumer, new ResourceLocation("stone_shovel"));
     }
 
 
