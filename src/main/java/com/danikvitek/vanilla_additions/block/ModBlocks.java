@@ -61,21 +61,21 @@ public class ModBlocks {
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> BAOBAB_LOG = register( //TODO: make as fuel and burnable
+    public static final RegistryObject<Block> BAOBAB_LOG = register(
             "baobab_log",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(Blocks.OAK_LOG)
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> BAOBAB_WOOD = register( //TODO: make as fuel and burnable
+    public static final RegistryObject<Block> BAOBAB_WOOD = register(
             "baobab_wood",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(Blocks.OAK_WOOD)
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> STRIPPED_BAOBAB_LOG = register( //TODO: make as fuel and burnable
+    public static final RegistryObject<Block> STRIPPED_BAOBAB_LOG = register(
             "stripped_baobab_log",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(Blocks.STRIPPED_OAK_LOG)
@@ -84,7 +84,7 @@ public class ModBlocks {
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> STRIPPED_BAOBAB_WOOD = register( //TODO: make as fuel and burnable
+    public static final RegistryObject<Block> STRIPPED_BAOBAB_WOOD = register(
             "stripped_baobab_wood",
             () -> new RotatedPillarBlock(AbstractBlock.Properties
                     .from(ModBlocks.STRIPPED_BAOBAB_LOG.get())
@@ -98,7 +98,7 @@ public class ModBlocks {
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
-    public static final RegistryObject<Block> BAOBAB_SAPLING = register( //TODO: make as fuel
+    public static final RegistryObject<Block> BAOBAB_SAPLING = register(
             "baobab_sapling",
             () -> new BaobabSapling(
                     BaobabTree::new,
