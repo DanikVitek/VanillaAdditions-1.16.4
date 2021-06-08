@@ -23,7 +23,11 @@ import net.minecraft.state.properties.SlabType;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlockLootTables extends BlockLootTables {
-    private static final ILootCondition.IBuilder SILK_TOUCH = MatchTool.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.IntBound.atLeast(1))));
+    private static final ILootCondition.IBuilder SILK_TOUCH
+            = MatchTool.builder(
+                    ItemPredicate.Builder.create()
+                            .enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH,
+                                    MinMaxBounds.IntBound.atLeast(1))));
 
     @Override
     protected void addTables() {

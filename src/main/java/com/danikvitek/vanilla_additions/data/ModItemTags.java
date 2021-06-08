@@ -11,7 +11,7 @@ public class ModItemTags {
     protected static final TagRegistry<Item> collection = TagRegistryManager.create(new ResourceLocation(VanillaAdditionsMod.MOD_ID,"item"), ITagCollectionSupplier::getItemTags);
     public static final ITag.INamedTag<Item> BAOBAB_LOGS = makeWrapperTag("baobab_logs");
     public static final ITag.INamedTag<Item> BLACKSTONE_TOOLS = makeWrapperTag("blackstone_tools");
-    public static final ITag.INamedTag<Item> AXES = makeWrapperTag("axes");
+//    public static final ITag.INamedTag<Item> AXES = makeWrapperTag("axes");
 //    public static final ITag.INamedTag<Item> FENCE_GATES = makeWrapperTag("fence_gates");
 
 
