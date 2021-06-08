@@ -11,7 +11,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ModRecipeTypes {
-    public static final RegistryObject<SawmillRecipe.Serializer> SAWMILL_SERIALIZIER
+    public static final RegistryObject<SawmillRecipe.Serializer> SAWMILL_SERIALIZER
             = Registration.RECIPE_SERIALIZER.register("sawmill", SawmillRecipe.Serializer::new);
 
     public static IRecipeType<SawmillRecipe> SAWMILL_RECIPE = new SawmillRecipe.SawmillRecipeType();

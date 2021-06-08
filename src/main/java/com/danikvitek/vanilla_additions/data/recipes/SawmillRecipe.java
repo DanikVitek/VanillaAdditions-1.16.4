@@ -66,7 +66,7 @@ public class SawmillRecipe implements ISawmillRecipe {
     @Override
     public IRecipeSerializer<?> getSerializer()
     {
-        return ModRecipeTypes.SAWMILL_SERIALIZIER.get();
+        return ModRecipeTypes.SAWMILL_SERIALIZER.get();
     }
 
     public static class SawmillRecipeType implements IRecipeType<SawmillRecipe>
