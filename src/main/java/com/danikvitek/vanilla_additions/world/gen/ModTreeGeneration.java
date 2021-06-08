@@ -24,7 +24,7 @@ import java.util.function.Supplier;
 public class ModTreeGeneration {
 
     @SubscribeEvent
-    public static  void onBiomeLoad(BiomeLoadingEvent event){
+    public static void onBiomeLoad(BiomeLoadingEvent event){
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(
                 Registry.BIOME_KEY,
                 Objects.requireNonNull(event.getName()));

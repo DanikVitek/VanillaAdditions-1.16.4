@@ -63,14 +63,14 @@ public class ModBlocks {
     );
     public static final RegistryObject<Block> BAOBAB_LOG = register(
             "baobab_log",
-            () -> new RotatedPillarBlock(AbstractBlock.Properties
+            () -> new /*RotatedPillarBlock*/BaobabLog(AbstractBlock.Properties
                     .from(Blocks.OAK_LOG)
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB
     );
     public static final RegistryObject<Block> BAOBAB_WOOD = register(
             "baobab_wood",
-            () -> new RotatedPillarBlock(AbstractBlock.Properties
+            () -> new BaobabWood(AbstractBlock.Properties
                     .from(Blocks.OAK_WOOD)
             ),
             VanillaAdditionsMod.VANILLA_ADDITIONS_TAB

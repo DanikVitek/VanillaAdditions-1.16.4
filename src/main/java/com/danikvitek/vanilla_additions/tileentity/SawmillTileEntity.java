@@ -35,12 +35,12 @@ public class SawmillTileEntity extends TileEntity implements ITickableTileEntity
         this(ModTileEntities.SAWMILL_TILE_ENTITY.get());
     }
 
-    public int getSizeInventory() {
-        return 5;
-    }
-
     public SawmillTileEntity(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
+    }
+
+    public int getSizeInventory() {
+        return 5;
     }
 
     private ItemStackHandler createHandler() {
@@ -140,8 +140,7 @@ public class SawmillTileEntity extends TileEntity implements ITickableTileEntity
     }
 
     @Override
-    public void tick()
-    {
+    public void tick() {
         assert world != null;
         if(world.isRemote)
             return;
