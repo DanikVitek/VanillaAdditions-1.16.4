@@ -46,6 +46,9 @@ public class ModLanguageProvider extends LanguageProvider {
                 add("screen.vanilla_additions.blackstone_furnace", "Blackstone Furnace");
                 add("screen.vanilla_additions.sawmill", "Sawmill");
 
+                add("stat.vanilla_additions.interact_with_sawmill", "Interactions with Sawmill");
+                add("stat.vanilla_additions.interact_with_blackstone_furnace", "Interactions with Blackstone Furnace");
+
                 add("itemGroup.vanilla_additions_tab", "Vanilla Additions");
                 break;
             case "uk_ua":
@@ -78,6 +81,9 @@ public class ModLanguageProvider extends LanguageProvider {
                 add("screen.vanilla_additions.blackstone_furnace", "Чорнокам'яна піч");
                 add("screen.vanilla_additions.sawmill", "Лісопилка");
 
+                add("stat.vanilla_additions.interact_with_sawmill", "Взаємодій із Лісопилкою");
+                add("stat.vanilla_additions.interact_with_blackstone_furnace", "Взаємодій із Чорнокам'яною піччю");
+
                 add("itemGroup.vanilla_additions_tab", "Ванильні доповнення");
                 break;
             case "ru_ru":
@@ -109,6 +115,9 @@ public class ModLanguageProvider extends LanguageProvider {
                 add("container.vanilla_additions.blackstone_furnace", "Печь из чернита");
                 add("screen.vanilla_additions.blackstone_furnace", "Печь из чернита");
                 add("screen.vanilla_additions.sawmill", "Лесопилка");
+
+                add("stat.vanilla_additions.interact_with_sawmill", "Взаимодействий с Лесопилкой");
+                add("stat.vanilla_additions.interact_with_blackstone_furnace", "Взаимодействий с Печью из чернита");
 
                 add("itemGroup.vanilla_additions_tab", "Ванильные дополнения");
                 break;

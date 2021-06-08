@@ -24,5 +24,7 @@
   "item.vanilla_additions.blackstone_sword": "Blackstone Sword",
   "itemGroup.vanilla_additions_tab": "Vanilla Additions",
   "screen.vanilla_additions.blackstone_furnace": "Blackstone Furnace",
-  "screen.vanilla_additions.sawmill": "Sawmill"
+  "screen.vanilla_additions.sawmill": "Sawmill",
+  "stat.vanilla_additions.interact_with_blackstone_furnace": "Interactions with Blackstone Furnace",
+  "stat.vanilla_additions.interact_with_sawmill": "Interactions with Sawmill"
 }

@@ -24,5 +24,7 @@
   "item.vanilla_additions.blackstone_sword": "Чорнокам'яний меч",
   "itemGroup.vanilla_additions_tab": "Ванильні доповнення",
   "screen.vanilla_additions.blackstone_furnace": "Чорнокам'яна піч",
-  "screen.vanilla_additions.sawmill": "Лісопилка"
+  "screen.vanilla_additions.sawmill": "Лісопилка",
+  "stat.vanilla_additions.interact_with_blackstone_furnace": "Взаємодій із Чорнокам'яною піччю",
+  "stat.vanilla_additions.interact_with_sawmill": "Взаємодій із Лісопилкою"
 }

@@ -1,5 +1,6 @@
 package com.danikvitek.vanilla_additions.block;
 
+import com.danikvitek.vanilla_additions.stats.ModStats;
 import com.danikvitek.vanilla_additions.tileentity.BlackstoneFurnaceTileEntity;
 import com.danikvitek.vanilla_additions.util.Config;
 import net.minecraft.block.AbstractBlock;
@@ -70,6 +71,7 @@ public class BlackstoneFurnace extends FurnaceBlock {
                     }
                 };
                 NetworkHooks.openGui((ServerPlayerEntity) player, containerProvider, pos);
+                player.addStat(ModStats.INTERACT_WITH_BLACKSTONE_FURNACE);
             }
             else
             {

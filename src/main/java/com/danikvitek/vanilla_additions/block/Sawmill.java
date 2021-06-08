@@ -1,6 +1,7 @@
 package com.danikvitek.vanilla_additions.block;
 
 import com.danikvitek.vanilla_additions.container.SawmillContainer;
+import com.danikvitek.vanilla_additions.stats.ModStats;
 import com.danikvitek.vanilla_additions.tileentity.ModTileEntities;
 import com.danikvitek.vanilla_additions.tileentity.SawmillTileEntity;
 import net.minecraft.block.Block;
@@ -115,6 +116,7 @@ public class Sawmill extends Block {
                     }
                 };
                 NetworkHooks.openGui((ServerPlayerEntity) player, containerProvider, tileEntity.getPos());
+                player.addStat(ModStats.INTERACT_WITH_SAWMILL);
             }
             else
             {

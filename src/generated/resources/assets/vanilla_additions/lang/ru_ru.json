@@ -24,5 +24,7 @@
   "item.vanilla_additions.blackstone_sword": "Мечь из чернита",
   "itemGroup.vanilla_additions_tab": "Ванильные дополнения",
   "screen.vanilla_additions.blackstone_furnace": "Печь из чернита",
-  "screen.vanilla_additions.sawmill": "Лесопилка"
+  "screen.vanilla_additions.sawmill": "Лесопилка",
+  "stat.vanilla_additions.interact_with_blackstone_furnace": "Взаимодействий с Печью из чернита",
+  "stat.vanilla_additions.interact_with_sawmill": "Взаимодействий с Лесопилкой"
 }
